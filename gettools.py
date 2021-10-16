@@ -123,7 +123,7 @@ def main():
 	html = response.read()
 	parser.feed(str(html))
 	
-	lastVersion = parser.HTMLDATA[-1]
+	lastVersion = parser.HTMLDATA[-1] + "/x86"
 	
 	urlpost15 = url + lastVersion + '/packages/com.vmware.fusion.tools.darwin.zip.tar'
 	urlpre15 = url + lastVersion + '/packages/com.vmware.fusion.tools.darwinPre15.zip.tar'
